@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lov3jom.art/sitemap.xml
+Sitemap: https://lovejom.art/sitemap.xml
