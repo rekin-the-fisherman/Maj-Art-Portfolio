@@ -183,19 +183,19 @@ section {
 
 .gallery-item {
     display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 10px;
     background-color: #FFFFFF;
     border: 1px solid #F1D5DF;
-    box-shadow: 0 2px 8px rgba(89, 59, 77, 0.06);
-    aspect-ratio: 1 / 1;
 }
 
 .gallery-item img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -359,13 +359,6 @@ section {
     object-fit: contain;
     border-radius: 10%;
 }
-.about-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10%;
-}
 
 .about-name {
     color: #593B4D;
@@ -447,6 +440,36 @@ section {
 .image-text p {
     margin-bottom: 0;
     font-size: 0.85rem;
+}
+
+.portfolio-card {
+    height: 100%;
+    min-width: 0;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.portfolio-card .gallery-item {
+    padding: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #F1D5DF;
+}
+
+.portfolio-credit {
+    margin: 10px 0 2px;
+    padding: 0;
+    font-size: 0.75rem;
+    color: #755D69;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
 }
 
 @media (max-width: 767.98px) {
@@ -551,5 +574,10 @@ section {
         text-align: center;
         display: flex;
         align-items: center;
+    }
+
+
+    .portfolio-credit {
+        font-size: 0.65rem;
     }
 }
