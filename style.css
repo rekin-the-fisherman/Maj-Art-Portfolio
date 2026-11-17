@@ -398,6 +398,7 @@ section {
     line-height: 1.9;
 }
 
+
 .about-divider {
     border-color: #F1D5DF;
     opacity: 1;
@@ -462,6 +463,17 @@ section {
 
 .portfolio-credit {
     margin: 10px 0 2px;
+    padding: 0;
+    font-size: 0.75rem;
+    color: #755D69;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    display: block;
+}
+
+.acknowledgement-credit {
     padding: 0;
     font-size: 0.75rem;
     color: #755D69;
